@@ -1,0 +1,7 @@
+.section {
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+.learnMore {
+  margin-top: 1rem;
+}

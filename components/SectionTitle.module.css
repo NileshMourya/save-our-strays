@@ -1,0 +1,27 @@
+.wrapper {
+  max-width: 640px;
+  margin-bottom: 2.75rem;
+}
+
+.wrapper.center {
+  max-width: 680px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.title {
+  font-size: clamp(2rem, 3.4vw, 2.85rem);
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,58 @@
+.hero {
+  padding-block: clamp(2.5rem, 5vw, 4rem) 1rem;
+  max-width: 760px;
+}
+
+.heroTitle {
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  margin-block: 0.6rem 1.25rem;
+}
+
+.heroText {
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.section {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.catCentre {
+  background: var(--surface);
+  padding-block: clamp(3.5rem, 7vw, 5.5rem);
+  margin-block: clamp(3rem, 6vw, 5rem);
+}
+
+.catCentreHeader {
+  margin-bottom: 1rem;
+}
+
+.catCentreGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+}
+
+.catCentreImage {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.catCentreTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 900px) {
+  .catCentreGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

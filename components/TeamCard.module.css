@@ -1,0 +1,52 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrap {
+  position: relative;
+  aspect-ratio: 3 / 3.6;
+  border-radius: 140px 140px 12px 12px;
+  overflow: hidden;
+  margin-bottom: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.15rem;
+  margin-bottom: 0.15rem;
+}
+
+.role {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-bottom: 0.6rem;
+}
+
+.bio {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  flex: 1;
+}
+
+.readMore {
+  align-self: flex-start;
+  margin-top: 0.85rem;
+  background: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  color: var(--ink);
+  border-bottom: 1.5px solid var(--border-strong);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.readMore:hover {
+  color: var(--accent-hover);
+  border-color: var(--accent);
+}

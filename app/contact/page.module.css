@@ -1,0 +1,53 @@
+.hero {
+  padding-block: clamp(2.5rem, 5vw, 4rem) 1rem;
+  max-width: 700px;
+}
+
+.heroTitle {
+  font-size: clamp(2.4rem, 4.6vw, 3.4rem);
+  margin-top: 0.6rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-block: clamp(1.5rem, 4vw, 3rem);
+}
+
+.card {
+  padding: 1.75rem;
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.icon {
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.cardTitle {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardLink {
+  font-weight: 600;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.cardLink:hover {
+  color: var(--accent-hover);
+}
+
+.formSection {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+  max-width: 760px;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

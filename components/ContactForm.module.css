@@ -1,0 +1,84 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.fieldRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.35rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.field label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.field input,
+.field textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--border-strong);
+  background: var(--white);
+  color: var(--text-primary);
+  transition: border-color 0.2s ease;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.error {
+  color: #a3341e;
+  font-size: 0.85rem;
+}
+
+.submit {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+.success {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: var(--trust-soft);
+  border-radius: 16px;
+  padding: 1.75rem;
+  color: var(--ink);
+}
+
+.success svg {
+  color: var(--trust);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.successTitle {
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+
+.successText {
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .fieldRow {
+    grid-template-columns: 1fr;
+  }
+}
